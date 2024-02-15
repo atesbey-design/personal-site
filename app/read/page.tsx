@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
+const tags = ['blockchain', 'rust', 'cryptology', 'selcukchain']
 const article = [
   {
     date: '13/01/2023',
@@ -57,8 +58,17 @@ const page = () => {
             {article.content}
           </Link>
         </div>
+        
       ))}
-    </div>
+      
+      <div className='flex flex-row mt-24'>
+        {tags.map((tag, index) => (
+                    <div key={index} className='text-blue-300  underline visited:text-purple-400 pr-2'>
+                      <Link href={`/tags/${tag}`}>#{tag}</Link>
+                  </div>
+        ))}
+ </div>
+</div>
   )
 }
 
