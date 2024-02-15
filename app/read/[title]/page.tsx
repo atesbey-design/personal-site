@@ -52,7 +52,7 @@ const article = [
     tags: ['rust', 'programming', 'beginner']
   }
 ]
-export default function Dashboard ({ params }: any) {
+export default function Page ({ params }: any) {
   console.log('params', params)
   const [articleData, setArticleData] = React.useState(article)
 
@@ -63,11 +63,12 @@ export default function Dashboard ({ params }: any) {
   return (
     <div>
       <div>
-        {filteredArticle.map((article: any) => (
-          <div>
+        {filteredArticle.map((article: any, index : any) => (
+          <div
+              key={index}>
             <div className='flex flex-row space-x-4 underline  text-blue-300'>
               {article.tags.map((tag: any) => (
-                <Link className='font-arimo' href={''}>
+                <Link key={index} className='font-arimo' href={''}>
                   #{tag}
                 </Link>
               ))}

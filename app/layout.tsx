@@ -23,7 +23,7 @@ export default function RootLayout ({
           <div className='relative w-full flex flex-col lg:space-y-6 space-y-3 justify-start font-arimo lg:px-64 px-6'>
             <div className='flex flex-col w-full justify-start items-start lg:space-y-4 '>
               <h2 className='font-arimo font-bold lg:text-3xl text-2xl'>
-                Ates's Personal Website
+                Ates Personal Website
               </h2>
               <div className='flex flex-row space-x-4 text-lg text-blue-300 underline border-b-2 w-full pb-2'>
                 <Link href={'/'}>/home</Link>

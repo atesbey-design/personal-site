@@ -47,8 +47,8 @@ const article = [
 const page = () => {
   return (
     <div>
-      {article.map(article => (
-        <div className='flex flex-row space-x-4 font-arimo text-lg'>
+      {article.map((article , index) => (
+        <div key={index} className='flex flex-row space-x-4 font-arimo text-lg'>
           <div className='italic'>{article.date}</div>
           <Link
             href={`/read/${article.title}`}
@@ -61,5 +61,5 @@ const page = () => {
     </div>
   )
 }
-export { article }
+
 export default page
