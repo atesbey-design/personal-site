@@ -14,7 +14,7 @@ export default function Home () {
           <Link className='text-blue-300 underline' href={'/'}>
             Komodo Platform
           </Link>{' '}
-          and many other open source projects. Beyond work, I'm obsessed with
+          and many other open source projects. Beyond work, Im obsessed with
           collecting watches and a huge fan of the sports of snooker and boxing.{' '}
           <br /> <br /> The opinions and criticisms expressed here are solely my
           personal thoughts and do not represent the views of any organizations,
