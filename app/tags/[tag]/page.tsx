@@ -29,7 +29,7 @@ const article = [
       date: '16/02/2023',
       content: 'Rust’ta Merge Sort Algoritması',
       title: 'rustta-merge-sort-algoritmasi',
-      tags: ['rust', 'programming'],
+      tags: ['rust', 'programming', 'selcukchain'],
     },
     {
       date: '02/01/2023',
