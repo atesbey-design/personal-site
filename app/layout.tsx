@@ -19,7 +19,7 @@ export default function RootLayout ({
     <html lang='en'>
       <body>
         {' '}
-        <main className='flex min-h-screen  flex-col items-center bg-zinc-800 text-white lg:p-24  pt-10'>
+        <main className='flex min-h-screen  flex-col items-center bg-neutral-800 text-white lg:p-24  pt-10'>
           <div className='relative w-full flex flex-col lg:space-y-6 space-y-3 justify-start font-arimo lg:px-64 px-6'>
             <div className='flex flex-col w-full justify-start items-start lg:space-y-4 '>
               <h2 className='font-arimo font-bold lg:text-3xl text-2xl'>
