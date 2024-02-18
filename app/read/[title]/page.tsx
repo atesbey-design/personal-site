@@ -1,10 +1,7 @@
 'use client'
 
-// 'use client' satırı gerekli değil ve silinebilir
-
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import Markdown from 'react-markdown'
 let Parser = require('rss-parser')
 let parser = new Parser()
 
@@ -24,7 +21,6 @@ const Article = ({
   useEffect(() => {
     ;(async () => {
       let feed = await parser.parseURL('https://medium.com/feed/@AtesBagcabasi')
-      // setArticleData(feed.items[0]['content:encoded'])
       SetArticleData(feed.items)
 
       const article = feed.items.find((item: any) => {
@@ -52,7 +48,20 @@ const Article = ({
               .toLocaleString('en-US')
               .split(',')[0]}
         </div>
-        <h1>{selectedArticle?.title}</h1>
+        <div className='flex flex-row py-4'>
+          <div>Tags:</div>
+          {selectedArticle?.categories?.map((tag: any, index: any) => (
+            <div
+              key={index}
+              className='text-blue-300  underline visited:text-purple-400 pr-2'
+            >
+              <Link href={`/tags/${tag}`}>#{tag}</Link>
+            </div>
+          ))}
+        </div>
+        <h1 className='text-center lg:text-2xl font-bold py-4'>
+          {selectedArticle?.title}
+        </h1>
         <div>
           {selectedArticle['content:encoded'] && (
             <div

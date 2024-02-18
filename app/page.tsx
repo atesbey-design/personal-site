@@ -32,21 +32,21 @@ export default function Home () {
         |
         <Link
           className='text-blue-300 underline lg:pr-2 pr-1'
-          href={'https://twitter.com/ebrartamer23'}
+          href={'https://twitter.com/AtesbeyEth'}
         >
           X
         </Link>
         |
         <Link
           className='text-blue-300 underline lg:pr-2 pr-1'
-          href={'https://www.linkedin.com/in/ebrar-tamer/'}
+          href={'https://www.linkedin.com/in/ates-bagcabasi/'}
         >
           linkedin
         </Link>
         |
         <Link
           className='text-blue-300 underline lg:pr-2 pr-1'
-          href={'https://github.com/ebrartamer'}
+          href={'https://github.com/atesbey-design'}
         >
           github
         </Link>

@@ -1,14 +1,12 @@
-import React from 'react';
+'use client'
+import React from 'react'
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
+const Page = ({ params }: any) => {
+  console.log('params ', params)
 
+  return <>ebrar2</>
+}
 
-const Page = ({params} : any) => {
-    console.log('params', params) 
-    return (
-        <div>
-
-        </div>
-    );
-};
-
-export default Page;
+export default Page
